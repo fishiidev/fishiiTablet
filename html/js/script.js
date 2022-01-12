@@ -12,11 +12,6 @@ $('.info-page').fadeOut()
 $('.garage').fadeOut()
 $('.multas').fadeOut()
 $('.calculadora').fadeOut()
-$('.hud').fadeOut()
-
-
- 
- 
 
 $(document).on('click', '.start-button', function(e){
     tablet_start.play();
