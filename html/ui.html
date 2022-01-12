@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fishii tablet</title>
+    <link rel="stylesheet" href="/html/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> <!-- JQuery -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+</head>
+<body>
+    <audio src="tablet_start.ogg" id="tablet_start"></audio>
+    <audio src="click.ogg" id="clickogg"></audio>
+    <div class="tablet-img">
+        <div class="container">
+            <div class="loading-page" style="">
+                <div class="server-logo">
+                    <img src="https://cdn.discordapp.com/attachments/889765685943754762/930744066931580938/M.png">
+                </div>
+                <div class="start-button">
+                    Iniciar
+                </div>
+            </div>
+            <div class="info-page" style="display: none;">
+                <div class="nav-bar">
+                    <div class="logo">
+                        <img class="nav-logo" src="https://cdn.discordapp.com/attachments/889765685943754762/930744066931580938/M.png">
+                    </div>
+                    <div class="button" id="fines">
+                        Multas
+                    </div>
+                    <div class="button" id="garage">
+                        Garage
+                    </div>
+                    <div class="button" id="calculator">
+                        Calculadora
+                    </div>      
+
+
+
+
+
+                    <div class="button" id="volver" style="color: rgb(179, 28, 28);">
+                        Volver
+                    </div>    
+                </div>
+                <div class="contenedor">
+                    <div class="box" id="character">
+                        <i class="fas fa-users"></i><span>MI IDENTIDAD</span>
+                    </div>
+                    <div class="info">
+                        <span class="name">Pescado Desarrollador</span>
+                        <div class="trabajo">
+                            <span id="job">Electricista</span>
+                            <span id="grade"></span>
+                        </div>
+
+                    </div>
+                    <div class="financials">
+                        <div class="box-financials" id="bank">
+                            <i class="fas fa-wallet"></i><span>Efectivo</span>
+                            <br>
+                            <span id="efectivo">$50000</span>
+                        </div>
+                        <div class="box-financials" id="bank">
+                            <i class="fas fa-wallet"></i><span>Banco</span>
+                            <br>
+                            <span id="bank-money">$50000</span>
+                        </div>
+                        <div class="box-financials" id="bank">
+                            <span id="phone">Numero de telefono</span>
+                            <br>
+                            <span id="numerodetelefono">67301892</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="garage" style=" display: none;">
+                <div class="nav-bar">
+                    <div class="logo">
+                        <img class="nav-logo" src="https://cdn.discordapp.com/attachments/889765685943754762/930744066931580938/M.png">
+                    </div>
+                    <div class="button" id="fines">
+                        Multas
+                    </div>  
+                    <div class="button" id="calculator">
+                        Calculadora
+                    </div>  
+
+
+
+
+                    <div class="button" id="volver2" style="color: rgb(179, 28, 28);">
+                        Volver
+                    </div>    
+                </div>
+                <div class="contenedor">
+                    <div class="box" id="character">
+                        <i class="fas fa-warehouse"></i><span>GARAGE</span>
+                    </div>
+                    <div class="garagecompleto">
+                        <div class="box" id="vehiculos">
+                            <span id="titulo">Vehiculos en propiedad</span>
+                            <br>
+                            <br>
+                            <div class="append"></div>
+
+                            <!-- <div class="vehiculo"> 
+                                <i class="fas fa-car-alt"></i><span id="modelo">Blista</span>
+                                <i class="fas fa-map-marker-alt"></i><span id="garage-si">Garage A</span>
+                                <i class="fas fa-gas-pump"></i><span id="gasolina">65%</span>
+                                <i class="fas fa-wrench"></i><span id="motor">65%</span>
+                                <i class="fas fa-id-card"></i><span id="placa">5MDS003</span>
+                            </div> -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="multas" style="display: none;">
+                <div class="nav-bar">
+                    <div class="logo">
+                        <img class="nav-logo" src="https://cdn.discordapp.com/attachments/889765685943754762/930744066931580938/M.png">
+                    </div>
+                    <div class="button" id="garage">
+                        Garage
+                    </div>    
+                    <div class="button" id="calculator">
+                        Calculadora
+                    </div>
+
+
+
+
+                    <div class="button" id="volver3" style="color: rgb(179, 28, 28);">
+                        Volver
+                    </div>    
+                </div>
+                <div class="contenedor">
+                    <div class="box" id="character">
+                        <i class="fas fa-users"></i><span>MULTAS</span>
+                    </div>
+                    <div class="multacompleto">
+                        <div class="box" id="multas">
+                            <span id="titulo">Multas | Por pagar</span>
+                            <br>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="calculadora" style="display: none;">
+                <div class="nav-bar">
+                    <div class="logo">
+                        <img class="nav-logo" src="https://cdn.discordapp.com/attachments/889765685943754762/930744066931580938/M.png">
+                    </div>
+                    <div class="button" id="garage">
+                        Garage
+                    </div>    
+                    <div class="button" id="fines">
+                        Multas
+                    </div>
+
+
+
+
+                    <div class="button" id="volver4" style="color: rgb(179, 28, 28);">
+                        Volver
+                    </div>    
+                </div>
+                <div class="contenedor">
+                    <div class="box" id="character">
+                        <i class="fas fa-users"></i><span>CALCULADORA</span>
+                    </div>
+                    <div class="calculator-app">
+                        <div class="main">
+                            <form name="form" action="">
+                                <input class="text" name="text" type="text" placeholder="CALCULADORA" onkeypress="formEngelle(event)"  >
+                            </form>
+                    
+                            <table>
+                                <tr>
+                                    <td><input class="buttonctm" type="button" value="C" onclick="hepsiniSil()"></td>
+                                    <td><input class="buttonctm" type="button" value="*" onclick="sayiekle('*')"></td>
+                                    <td><input class="buttonctm" type="button" value="/" onclick="sayiekle('/')"></td>
+                                    <td><input class="buttonctm" type="button" value="<" onclick="sil()"></td>
+                                </tr>
+                                <tr>
+                                    <td><input class="buttonctm" type="button" value="7" onclick="sayiekle(7)"></td>
+                                    <td><input class="buttonctm" type="button" value="8" onclick="sayiekle(8)"></td>
+                                    <td><input class="buttonctm" type="button" value="9" onclick="sayiekle(9)"></td>
+                                    <td><input class="buttonctm" type="button" value="-" onclick="sayiekle('-')"></td>
+                                </tr>
+                                <tr>
+                                    <td><input class="buttonctm" type="button" value="4" onclick="sayiekle(4)"></td>
+                                    <td><input class="buttonctm" type="button" value="5" onclick="sayiekle(5)"></td>
+                                    <td><input class="buttonctm" type="button" value="6" onclick="sayiekle(6)"></td>
+                                    <td><input class="buttonctm" type="button" value="+" onclick="sayiekle('+')"></td>
+                                </tr>
+                                <tr>
+                                    <td> <input class="buttonctm" type="button" value="1" onclick="sayiekle(1)"> </td>
+                                    <td> <input class="buttonctm" type="button" value="2" onclick="sayiekle(2)"> </td>
+                                    <td> <input class="buttonctm" type="button" value="3" onclick="sayiekle(3)"></td>
+                                    <td rowspan="2"> <input class="buttonctm" style="height: 106px" type="button" value="=" onclick="sonuc('=')"></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2"> <input class="buttonctm" style="width: 106px" type="button" value="0" onclick="sayiekle(0)"> </td>
+                                    <td> <input class="buttonctm" type="button" value="." onclick="sayiekle('.')"> </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/html/js/script.js"></script>
+</body>
+</html>
+

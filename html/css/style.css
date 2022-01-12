@@ -1,0 +1,529 @@
+
+body {
+    display: none;
+}
+
+* {
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+ 
+    /*
+      Introduced in IE 10.
+      See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
+    */
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.container {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: white; 
+    border-radius: 10px;
+  }
+  
+
+@font-face {
+	font-family: --c;
+	src: url(/html/fonts/bankgothic.ttf);
+}
+
+
+@font-face {
+	font-family: --f;
+	src: url(/html/fonts/digital.ttf);
+}
+
+ 
+
+.container {
+    background-color: rgba(0, 0, 0, 0.712);
+    border-radius: 10px;
+    width: 120vh;
+    height: 70vh;
+    box-shadow: 0px 0px 5px 3px black;
+    background-image: url("https://cdn.discordapp.com/attachments/808379734199107584/889502045193797743/unknown.png");
+    background-size: cover;
+}
+
+
+.server-logo img {
+    width: 25%;
+    display: block;
+    padding-top:15%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.nav-logo {
+    width: 10vh;
+}
+
+.nav-bar {
+    margin-top: 0px;
+    width: 11vh;
+    position: fixed;
+    z-index: 1;
+    height: 59.5vh;
+    top: 0%;
+    background-image: url(https://cdn.discordapp.com/attachments/888169199992700958/889535179494924330/q5YcNU7.gif);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top:    10vh;
+    padding-bottom: 5px;
+    border-radius:10px 0px 0px 10px;
+}
+
+.button {
+    margin-top: 5px;
+    border-radius: 5px;
+    color: white;
+    border-radius: 5px;
+    width:96%;
+    display: block;
+    margin-left: 0%;
+    margin-right: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    transition: 0.2s ease-in-out;
+    font-family: --c;
+    text-align: center
+}
+
+
+.contenedor {
+    padding-left: 9%;
+}
+
+.button:hover {
+    background-image: url('https://cdn.discordapp.com/attachments/888169199992700958/889529595408318484/SX8eWPV.gif');
+    transform: scale(1.1);
+    color: black;
+    transition: ease-in-out 0.3s;
+    box-shadow: 0 0 10px #fff;
+}
+
+
+.start-button {
+    margin-top: 5px;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    border-radius: 5px;
+    width:10%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    transition: 0.2s ease-in-out;
+    font-family: --c;
+    text-align: center
+}
+
+
+.start-button:hover {
+    background-image: url('https://cdn.discordapp.com/attachments/888169199992700958/889529595408318484/SX8eWPV.gif');
+    transform: scale(1.1);
+    color: black;
+    transition: ease-in-out 0.3s;
+    box-shadow: 0 0 10px #fff;
+}
+
+.info-page {
+    position: relative;
+    top: 5%;
+    width: 100%;
+}
+
+.calculadora {
+    position: relative;
+    top: 5%;
+}
+
+.hud {
+    position: relative;
+    top: 5%;
+}
+
+.galeria {
+    position: relative;
+    top: 5%;
+}
+
+.multas {
+    position: relative;
+    top: 5%;
+}
+
+.multa i {
+    padding-left: 30px;
+    padding-right: 10px;
+}
+
+
+.garage {
+    position: relative;
+    top: 5%;
+}
+
+.box {
+    position: relative;
+    background-color: white;
+    box-shadow: 0px 0px 8px 3px white;
+    color: black;
+    border-radius: 5px;
+    width:25vh;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 0.2s ease-in-out;
+    font-family: --c;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-weight: lighter;
+        
+}
+
+.box-financials {
+    position: relative;
+    background-color: white;
+    box-shadow: 0px 0px 8px 3px white;
+    color: black;
+    border-radius: 2px;
+    width:25vh;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 0.2s ease-in-out;
+    font-family: --c;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-weight: lighter;
+    display: inline-block;
+    margin-left: 2%;
+}
+
+.box-financials:hover {
+    box-shadow: 0px 0px 8px 5px white;
+}
+
+.box:hover {
+    box-shadow: 0px 0px 8px 5px white;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+
+
+.name {
+    color: white;
+    display: block;
+    text-align: center;
+    font-family: --c;
+    padding-bottom: 0% ;
+    font-size: 5vh;
+    font-family: --c;
+    font-weight: 800;
+}
+
+.trabajo {
+    color: white;
+    display: block;
+    text-align: center;
+    font-family: --c;
+    font-size: 5vh;
+    font-family: --c;
+    display: inline-block;
+    font-weight: 800;
+    width: 100%;
+
+}
+
+.financials {
+    margin-left: 11%;
+    width: 100%;
+}
+
+.info {
+    padding-top: 4%;
+    padding-bottom: 5%;
+}
+
+#character {
+    font-family: --c;
+    font-weight: 800;
+    font-size: 5vh;
+    width: 95%;
+    text-align: left;
+    padding-left: 2%;
+}
+
+#titulo {
+    font-weight: 800;
+    font-size: 3vh;
+}
+
+#vehiculos {
+    width: 90%;
+}
+
+#multas {
+    width: 90%;
+}
+
+#fotos {
+    width: 90%;
+}
+
+.photo {
+    padding: 5px;
+    margin-left: 20px;
+    width: 100px;
+    height: 100px;
+    background-image: url(https://cdn.discordapp.com/attachments/888169199992700958/892949802852179978/unknown.png);
+}
+
+#phone {
+    font-weight: 800;
+    font-size: 2.4vh;
+    text-align: center; 
+}
+#bank {
+    font-weight: 800;
+    font-size: 3vh;
+    text-align: center;
+}
+
+#bank i {
+    padding-right: 2%;
+}
+
+#vehiculos i {
+    padding-right: 2%;
+    padding-left: 5%;
+}
+
+#efectivo {
+    font-weight: normal;
+}
+#bank-money {
+    font-weight: normal;
+}
+#numerodetelefono {
+    font-weight: normal;
+}
+
+#character i {
+    padding-right: 0.5%;
+}
+
+#job {
+    font-weight: 600;
+    font-size: 3vh;
+    text-align: center;
+}
+
+
+#grade {
+    font-weight: 600;
+    font-size: 3vh;
+    padding-left: 0%;
+    
+}
+
+.modelo {
+    padding-right: 5px;
+}
+
+.vehiculo {
+    margin-bottom: 15px;
+    text-align: left;
+    
+}
+
+
+
+.multa {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.garage-si {
+    background-color: black;
+    border-radius: 10px;
+    color: white;
+    padding: 5px 5px 5px 5px;
+}
+
+.gasolina {
+    background-color: black;
+    border-radius: 10px;
+    color: white;
+    padding: 5px 5px 5px 5px;
+}
+
+.motor {
+    background-color: black;
+    border-radius: 10px;
+    color: white;
+    padding: 5px 5px 5px 5px;
+}
+
+.labelMulta {
+    background-color: black;
+    border-radius: 10px;
+    color: white;
+    padding: 5px 5px 5px 5px;
+}
+
+.amountMulta {
+    background-color: black;
+    border-radius: 10px;
+    color: white;
+    padding: 5px 5px 5px 5px;
+}
+
+.placa {
+    background-color: black;
+    border-radius: 10px;
+    color: white;
+    padding: 5px 5px 5px 5px;
+}
+.valet {
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 10px 5px 10px;
+    float: right;
+    margin-right: 5%;
+}
+
+.valet:hover {
+        background-image: url('https://cdn.discordapp.com/attachments/888169199992700958/889529595408318484/SX8eWPV.gif');
+        transform: scale(1.1);
+        color: black;
+        transition: ease-in-out 0.3s;
+        box-shadow: 0 0 10px #fff;
+        border: 1px solid black;
+    
+}
+
+
+.pagar {
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 10px 5px 10px;
+    float: right;
+    margin-right: 5%;
+}
+
+.pagar:hover {
+        background-image: url('https://cdn.discordapp.com/attachments/888169199992700958/889529595408318484/SX8eWPV.gif');
+        transform: scale(1.1);
+        color: black;
+        transition: ease-in-out 0.3s;
+        box-shadow: 0 0 10px #fff;
+        border: 1px solid black;
+    
+}
+
+.calculator-app {
+
+}
+
+.garagecompleto {
+        width: 100%;
+    overflow: hidden;
+    height: 55vh;
+    overflow: -moz-scrollbars-vertical; 
+    overflow-y: scroll;
+}
+
+.multacompleto {
+    width: 100%;
+overflow: hidden;
+height: 55vh;
+overflow: -moz-scrollbars-vertical; 
+overflow-y: scroll;
+}
+
+.buttonctm{
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    margin: 4px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid white;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;    
+    transition: 200ms all;
+    font-family: --f;
+}
+
+
+.text{
+    font-family: --f ;
+    width: 240px;
+    font-size: 50px;
+    padding: 5px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    margin-bottom: 40px;
+    margin-top: 5px;
+    text-align: right;
+    box-shadow: 0px 0px 8px 3px white;
+    text-align: center;
+}
+.main{
+    position: absolute;
+    top: 40%;
+    left: 51%;
+    transform: translateX(-50%)translateY(25%);
+}   
+
+.buttonctm:hover {
+  background-color: #000000d3;  
+  box-shadow: 0px 0px 8px 2px black;
+  color: white;
+}
+
+.text::placeholder {
+
+    font-size: 3.5vh;
+    text-align: center;
+    font-family: --c;
+    opacity: 0.5;
+}
+
+input:focus {
+    outline: none;
+}
+
+
+.colorpicker {
+    position: absolute;
+    top: 15vw;
+    left: 50%;
+    transform: translate(-50%);
+}
