@@ -1,5 +1,5 @@
-ESX = nil
-TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
+ESX = exports['es_extended']:getSharedObject()
+
 
 -- Thanks to medinaa for most of the serverside and javascript code:)))
 
